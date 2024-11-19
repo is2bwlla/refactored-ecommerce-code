@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Hello Coquetty!</title>
+
+        <!-- TEM QUE IMPORTAR AS FONTES AQUI -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Carattere&display=swap"/>
+        <link href="https://fonts.googleapis.com/css2?family=Manuale:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Manuale:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet"/>
+        <link rel="stylesheet" href="./styles/styles.css" />
+    </head>
+
+    <body>
+        <div class="fundo"> <!-- é o fundo branco do site -->
+          <header> <!-- indica o início do meu cabeçalho -->
+            <section class="barra-pesquisa"> <!-- é o search de produtos -->
+              <div id="logo"><a href="/index.html"><img src="/images/HOME/hello kitty.png" alt="Logomarca Hello Coquetty"/></a></div> <!-- logo do site -->
+              <div id="titulo"><a href="/index.html"><h1 id="texto">Hello Coquetty!</h1></a></div> <!-- nome do site -->
+              <div id="busca"><input type="text" id="txtBusca" placeholder="Navegue pela Hello Coquetty..."/><div><img src="/images/HOME/search.png" id="btnBusca" alt="Buscar" /></div></div>
+    
+              <div id="menu-itens"> <!-- é a área do usuário -->
+                <a href="/carrinho.html"><img id="carrinho" src="/images/HOME/carrinho-de-compras.png" alt="carrinho"/></a> <!-- logo do carrinho -->
+                <a href=""><img id="favoritos" src="/images/HOME/silhueta-em-forma-de-coracao.png" alt="favoritos"/></a> <!-- logo dos produtos favoritos -->
+                <a href="/usuario.html"><img id="usuario" src="/images/HOME/usuario-home.png" alt="usuário" /></a> <!-- logo do usuário -->
+              </div>
+            </section>
+    
+            <nav class="nav-categorias"> <!-- é minha divisão por categorias -->
+              <ul>
+                <li><a href="/Brinquedos.html"><img src="/images/HOME/icone brinquedos.png" alt="Funko Hello Kitty"/><span>Brinquedos</span></a></li> <!-- categoria: brinquedo -->
+                <li><a href="/Acessorios.html"><img src="/images/HOME/icone acessórios.png" alt="Presilhas Sanrio"/><span>Acessórios</span></a></li> <!-- categoria: acessorios -->
+                <li><a href="/Sanrio.html"><img src="/images/HOME/icone sanrio.png" alt="Turma Sanrio"/><span>Sanrio</span></a></li> <!-- categoria: turma sanrio -->
+              </ul>
+            </nav>
+          </header> <!-- encerra meu cabeçalho -->
+
+            <main class="product main-content container">
+                <div class="product text-container">
+                  <h2 class="main-text">Checkout</h2>
+                  <p>Verifique os itens do carrinho e finalize agora</p>
+                </div>
+            
+                <section class="product text-container">
+                  <div id="billing">
+                    <div class="grid_col_1">
+                      <form action="">
+                        <h2>Seus Dados:</h2>
+                        <div class="form-fields">
+                          <Div class="form-field">
+                            <label for="e-mail">E-mail</label>
+                            <input type="e-mail" name="e-mail" id="e-mail" placeholder="e-mail">
+                          </Div>
+                          <div class="form-group container-flex">
+                            <Div class="form-field">
+                              <label for="name">Nome</label>
+                              <input type="text" name="name" id="name" placeholder="Nome">
+                            </Div>
+                            <Div class="form-field">
+                              <label for="Sobrenome">Sobrenome</label>
+                              <input type="text" name="surname" id="surname" placeholder="Sobrenome">
+                            </Div>
+                          </div>
+            
+                          <div class="form-group container-flex">
+                            <Div class="form-field">
+                              <label for="phone">Telefone</label>
+                              <input type="text" name="phone" id="phone" placeholder="Telefone com DDD">
+                            </Div>
+                            <Div class="form-field">
+                              <label for="CPF">CPF</label>
+                              <input type="text" name="CPF" id="CPF" placeholder="CPF">
+                            </Div>
+                          </div>
+                          <div class="form-group container-flex">
+                            <Div class="form-field">
+                              <label for="address">Logradouro</label>
+                              <input type="text" name="address" id="address" placeholder="Logradouro">
+                            </Div>
+                            <Div class="form-field cep">
+                              <label for="zip">CEP</label>
+                              <input type="text" name="zip" id="zip" placeholder="CEP">
+                            </Div>
+                          </div>
+            
+            
+                          <div class="form-group container-flex">
+                            <Div class="form-field">
+                              <label for="address">Nº</label>
+                              <input type="text" name="number" id="number" placeholder="Nº">
+                            </Div>
+                            <Div class="form-field">
+                              <label for="address_2">Complemento</label>
+                              <input type="address_2" name="address_2" id="address_2" placeholder="Complemento">
+                            </Div>
+                            <Div class="form-field">
+                              <label for="neighborhood">Bairro</label>
+                              <input type="text" name="neighborhood" id="neighborhood" placeholder="Bairro">
+                            </div>
+                          </div>
+            
+                          <div class="form-group container-flex">
+            
+                            <Div class="form-field">
+                              <label for="city">Cidade</label>
+                              <input type="text" name="city" id="city" placeholder="Cidade">
+                            </Div>
+                            <Div class="form-field uf">
+                              <label for="state">Estado</label>
+                              <select id="estado" name="UF">
+                                <option value="" selected>Selecione...</option>
+                                <option value="AC">AC</option>
+                                <option value="AL">AL</option>
+                                <option value="AP">AP</option>
+                                <option value="AM">AM</option>
+                                <option value="BA">BA</option>
+                                <option value="CE">CE</option>
+                                <option value="DF">DF</option>
+                                <option value="ES">ES</option>
+                                <option value="GO">GO</option>
+                                <option value="MA">MA</option>
+                                <option value="MT">MT</option>
+                                <option value="MS">MS</option>
+                                <option value="MG">MG</option>
+                                <option value="PA">PA</option>
+                                <option value="PB">PB</option>
+                                <option value="PR">PR</option>
+                                <option value="PE">PE</option>
+                                <option value="PI">PI</option>
+                                <option value="RJ">RJ</option>
+                                <option value="RN">RN</option>
+                                <option value="RS">RS</option>
+                                <option value="RO">RO</option>
+                                <option value="RR">RR</option>
+                                <option value="SC">SC</option>
+                                <option value="SP">SP</option>
+                                <option value="SE">SE</option>
+                                <option value="TO">TO</option>
+                              </select>
+                            </Div>
+                          </Div>
+                        </div>
+                      </form>
+                    </div>
+            
+                    <div class="grid_col_2">
+            
+                      <div class="total_container container-flex column">
+                        <div class="total container-flex">
+                          <h3>SUBTOTAL</h3>
+                          <H3>R$ 0.00</H3>
+                        </div>
+                        <div class="total container-flex">
+                          <h3>Frete</h3>
+                          <H3>R$ 0.00</H3>
+                        </div>
+                        <div class="total container-flex">
+                          <h3>Total</h3>
+                          <H3>R$ 0.00</H3>
+                        </div>
+            
+                      </div>
+            
+                      <button class="button checkout_btn">Finalizar</button>
+                      <form class="container-flex">
+                        <div class="pay-method">
+                          <input type="radio" name="pagamento" id="credito" checked><label for="credito">Crédito</label>
+                        </div>
+                        <div class="pay-method">
+                          <input type="radio" name="pagamento" id="debito"><label for="debito">Débito</label>
+                        </div>
+                        <div class="pay-method">
+                          <input type="radio" name="pagamento" id="pix"><label for="pix">PIX</label>
+                        </div>
+                        <div class="pay-method">
+                          <input type="radio" name="pagamento" id="bol"><label for="bol">Boleto</label>
+                        </div>
+                      </form>
+                      <form class="payment">
+                        <div class="form-field">
+                          <label for="nome_cartao">Nome no Cartão:</label>
+                          <input type="text" id="nome_cartao" name="nome_cartao" required>
+                        </div>
+            
+                        <div class="form-field">
+                          <label for="numero_cartao">Número do Cartão:</label>
+                          <input type="text" id="numero_cartao" name="numero_cartao" maxlength="16" required>
+                        </div>
+            
+                        <div class="card-info">
+                          <div class="form-field val">
+                            <label for="validade_cartao">Validade:</label>
+                            <input type="text" id="validade_cartao" name="validade_cartao" placeholder="MM/AA" maxlength="5"
+                              required>
+                          </div>
+            
+                          <div class="form-field cvv">
+                            <label for="cvv">CVV:</label>
+                            <input type="text" id="cvv" name="cvv" maxlength="3" required>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </section>
+              </main>
+
+              <footer> <!-- tag contendo meu rodapé -->
+                <section class="rodape">
+                    <div><h3 id="inst">Institucional</h3>  <!-- área de informações e contato do site -->
+                        <a href="sobre.html"><p>Sobre nós</p></a>
+                        <a href="fale.html"><p>Fale conosco</p></a>
+                        <a href="trocas.html"><p>Política de trocas</p></a>
+                        <a href="privacidade.html"></s><p>Política de privacidade</p></a>
+                    </div>
+
+                    <div><h3 id="atend">Atendimento</h3> <!-- área de informações e contato do site -->
+                        <p>Diariamente das 9h as 22h</p>
+                        <p><img id="wpp1" src="images/HOME/icone wpp 1.png" alt="Logo WhatsApp"/>(19) 99999-9999</p>
+                        <p><img id="wpp2" src="images/HOME/icone wpp 1.png" alt="Logo WhatsApp"/>(19) 99999-9999</p>
+                    </div>
+
+                    <div>
+                        <h3 id="redes">Redes sociais</h3> <!-- área de informações e contato do site -->
+                        <p>Acompanhe todas as novidades através das nossas redes sociais</p>
+                        <img id="ig" src="images/HOME/icone instagram.png" alt="Logo Instagram"/>
+                        <img id="ttk" src="images/HOME/icone tiktok.png" alt="Logo TikTok"/>
+                    </div>
+                </section>
+
+				<!--os créditos -->
+                <h6 id="direitos">Todos os direitos reservados - DESENVOLVIDO POR DESENVOLVIMENTO DE SISTEMAS: SENAI "Roberto Mange"</h6>
+			</footer> <!-- encerramento do meu rodapé -->
+		</div> <!-- encerramento do fundo branco do site -->
+	</body> <!-- encerramento do meu body -->
+</html> <!-- encerramento do meu conteúdo HTML -->

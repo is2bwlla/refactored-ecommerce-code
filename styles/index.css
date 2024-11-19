@@ -1,0 +1,31 @@
+/* ESTILIZAÇÃO DA MINHA INDEX */
+section h2 {
+	display: flex; 
+	justify-content: center; 
+	font-size: 35px; 
+	font-family: var(--poppins); 
+	color: var(--cor-primaria); 
+	margin-top: 20px; 
+    margin-bottom: 20px;
+}
+
+.cartaz {
+	margin-top: 20px;
+    justify-content: center;
+    display: flex;
+    height: auto;
+}
+
+.cartaz img {
+    width: 100%;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+    section h2 { 
+        font-size: 18px; 
+        margin-top: 20px; 
+        color: var(--cor-terciaria);
+        background-color: var(--cor-primaria);
+    }
+}
