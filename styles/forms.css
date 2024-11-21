@@ -1,0 +1,160 @@
+/* FORMS DE CADASTRO */
+.btn-formulario {
+	margin-bottom: 15px;
+	width: 100px;
+	font-size: 20px;
+	padding: 10px 0px;
+	background-color: #f08f84;
+	border-radius: 11px;
+	height: 45px;
+	align-self: flex-end;
+}
+
+.btn-formulario-cadastro {
+	margin-bottom: 15px;
+	width: 100px;
+	font-size: 20px;
+	padding: 10px 0px;
+	background-color: #f08f84;
+	border-radius: 11px;
+	height: 45px;
+	align-self: flex-end;
+}
+
+.checkout-grid {
+	display: flex;
+	justify-content: flex-end;
+}
+
+/* CONFIGURAÇÕES DO FORMULÁRIO DE AJUDA */
+
+.botao-formulario {
+	display: flex;
+	background: var(--blue);
+	background-color: #f08f84;
+	color: var(--white);
+	border: 0;
+	border-radius: 6px;
+	padding: 16px 20px;
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: bold;
+
+	transition: filter 0.2s;
+}
+
+.botao-formulario:hover {
+	filter: brightness(0.8);
+}
+
+.campo_formulario {
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 10px;
+}
+
+.campo_formulario.row-1 {
+flex-direction: row;
+justify-content: space-between;
+column-gap: 16px;
+}
+
+.campo_formulario .col-1, .campo_formulario .col-2, .campo_formulario .col-3, .campo_formulario .col-4 {
+padding:0
+}
+.campo_formulario .col-1, .campo_formulario .col-2, .campo_formulario .col-3, .campo_formulario .col-4 {
+display: flex;
+flex-direction: column;
+width: 100%;
+}
+
+.campo_formulario label{
+	font-size: 14px;
+	padding-bottom: 5px;
+	font-family: "Manrope";
+}
+
+.campo_formulario input, select{
+	font-size: 16px;
+	padding: 4px;
+	border-radius: 10px;
+	border: 1px solid #cccbcb;
+	font-family: "Manrope";
+}
+
+/* CONFIGURAÇÕES FORMULÁRIO DE PAGAMENTO */
+
+.payment {
+    padding:10px 0px
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0px;
+    width:100%
+}
+
+.form-field label {
+    padding-bottom: 5px;
+    font-size: 12px;
+}
+
+.form-field input, select{
+    padding:10px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid #e4e4e4;
+}
+
+.form-field.cep,.form-field.uf{
+    width: 20%;
+}
+
+
+.form-group {
+    column-gap: 16px;
+}
+
+.pay-method input{
+    margin-right: 3px;
+}
+
+.pay-method {
+	margin-bottom: 5px;
+}
+
+.cvv{
+    width: 20%;
+}
+
+.val{
+    width: 30%;
+}
+
+.card-info{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: flex-start;
+    column-gap: 16px;
+}
+
+/* CONFIGURAÇÕES DO FORMULÁRIO DE COMPRA */
+
+.grid-1 {
+	padding-bottom: 75px;
+}
+
+.container-formulario {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.dados {
+	font-family: "Manrope";
+	color: black;
+	font-size: 27px;
+}

@@ -1,0 +1,55 @@
+.rodape {
+	background-color: #ffe8e6;
+	display: flex; 
+	justify-content: space-around; 
+	align-items: baseline;
+	margin-top: 50px; 
+	border-radius: 33px; 
+	padding: 10px; 
+}
+
+#direitos {
+	display: flex; 
+	justify-content: center; 
+	margin-top: 17px; 
+	font-family: var(--poppins);
+}
+
+.rodape h3 {
+	font-size: 27px; 
+	font-family: var(--poppins); 
+}
+
+.rodape p {
+	font-family: var(--poppins); 
+	font-size: 15px; 
+	text-decoration: underline;
+}
+
+.img-medias {
+    display: flex;
+    align-items: center;
+}
+
+.app-icon {
+    display: flex;
+    align-items: center;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 768px) {
+    .rodape {
+        flex-wrap: wrap;
+    }
+
+    .rodape h3 {
+        font-size: 15px; 
+        margin-top: 10px; 
+    }
+    
+    .rodape p {
+        font-size: 15px; 
+        text-decoration: underline;
+    }
+}

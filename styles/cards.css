@@ -68,31 +68,28 @@
 
 
 @media (max-width: 768px) {
-    .cards-produto img {
-        width: 47%;
-        height: auto;
-    }
-
-	.cards-produto {
-		width: 22%;
-		height: auto;
-		margin: 0;
-	}
-
 	.produto {
 		display: flex;
-		justify-content: space-between;
+		justify-content: center;
+		flex-wrap: wrap;
 	}
 
 	.nome-produto {
-		font-size: 12px;
+		font-size: 15px;
+		width: 100%;
 	}
 
 	.codigo {
-		font-size: 7px;
+		font-size: 10px;
+		width: 100%;
 	}
 
 	.parcela {
-		font-size: 11px;
+		font-size: 14px;
+		width: 100%;
+	}
+
+	.cards-produto {
+		border: 1px solid var(--cor-primaria);
 	}
 }

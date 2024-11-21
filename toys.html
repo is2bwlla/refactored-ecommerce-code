@@ -15,41 +15,78 @@
 		<link rel="stylesheet" href="./styles/styles.css" />
         <script src="./scripts/carrossel.js"></script>
         <script type="module" src="./scripts/products.js" defer></script>
+        <script type="module" src="./scripts/menu-hamburguer.js"></script>
     </head>
 
     <body>
-		<div class="fundo"> <!-- é o fundo branco do site -->
-			<header> <!-- indica o início do meu cabeçalho -->
-				<section class="barra-pesquisa"> <!-- é o search de produtos -->
-					<div id="logo"><a href="/index.html"><img src="/images/HOME/hello kitty.png" alt="Logomarca Hello Coquetty"/></a></div> <!-- logo do site -->
-					<div id="titulo"><a href="/index.html"><h1 id="texto">Hello Coquetty!</h1></a></div> <!-- nome do site -->
-					<div id="busca"><input type="text" id="txtBusca" placeholder="Navegue pela Hello Coquetty..."/><div><img src="/images/HOME/search.png" id="btnBusca" alt="Buscar" /></div></div>
-
-					<div id="menu-itens"> <!-- é a área do usuário -->
-						<a href="/carrinho.html"><img id="carrinho" src="/images/HOME/carrinho-de-compras.png" alt="carrinho"/></a> <!-- logo do carrinho -->
-						<a href=""><img id="favoritos" src="/images/HOME/silhueta-em-forma-de-coracao.png" alt="favoritos"/></a> <!-- logo dos produtos favoritos -->
-						<a href="/usuario.html"><img id="usuario" src="/images/HOME/usuario-home.png" alt="usuário" /></a> <!-- logo do usuário -->
+		<div class="background"> <!-- é o fundo branco do site -->
+			<header>
+				<section class="navbar">
+					<div class="logo-box">
+						<div class="logo">
+							<a href="/index.html"><img src="/images/HOME/hello kitty.png" alt="Logomarca Hello Coquetty"/></a>
+						</div>
+				
+						<div class="title">
+							<a href="/index.html"><h1>Hello Coquetty!</h1></a>
+						</div>
 					</div>
-				</section>
+				
+					<div class="search">
+						<div class="search-box">
+							<input type="text" class="input" placeholder="Buscar..."/>
+							<img src="/images/HOME/search.png" class="search-icon" alt="Buscar" />
+						</div>
+				
+						<!-- Menu normal para telas grandes -->
+						<div class="menu-itens">
+							<a href="/carrinho.html"><img class="nav-icon" src="/images/HOME/carrinho-de-compras.png" alt="carrinho"/></a>
+							<a href="/favoritos.html"><img class="nav-icon" src="/images/HOME/silhueta-em-forma-de-coracao.png" alt="favoritos"/></a>
+							<a href="/usuario.html"><img class="nav-icon" src="/images/HOME/usuario.png" alt="usuário" /></a>
 
-				<nav class="nav-categorias"> <!-- é minha divisão por categorias -->
+							<div class="menu-hamburguer">
+								<img src="/images/HOME/hamburger-icon.png" alt="Menu" class="hamburguer-icon" />
+							</div>
+						</div>
+					</div>
+				</section>				
+
+				<nav class="bg-nav">
 					<ul>
-						<li><a href="/Brinquedos.html"><img src="/images/HOME/icone brinquedos.png" alt="Funko Hello Kitty"/><span>Brinquedos</span></a></li> <!-- categoria: brinquedo -->
-						<li><a href="/Acessorios.html"><img src="/images/HOME/icone acessórios.png" alt="Presilhas Sanrio"/><span>Acessórios</span></a></li> <!-- categoria: acessorios -->
-						<li><a href="/Sanrio.html"><img src="/images/HOME/icone sanrio.png" alt="Turma Sanrio"/><span>Sanrio</span></a></li> <!-- categoria: turma sanrio -->
+						<li>
+							<a href="/Brinquedos.html" class="nav-item">
+								<img src="/images/HOME/icone brinquedos.png" alt="Funko Hello Kitty"/>
+								<span>Brinquedos</span>
+							</a>
+						</li>
+
+						<li>
+							<a href="/Acessórios.html" class="nav-item">
+								<img src="/images/HOME/icone acessórios.png" alt="Presilhas Sanrio"/>
+								<span>Acessórios</span>
+							</a>
+						</li>
+
+						<li>
+							<a href="/Sanrio.html" class="nav-item">
+								<img src="/images/HOME/icone sanrio.png" alt="Turma Sanrio" />
+								<span>Sanrio</span>
+							</a>
+						</li>
 					</ul>
 				</nav>
-			</header> <!-- encerra meu cabeçalho -->
+			</header>
 
             <main>
                 <section class="lancamento"><h2>BRINQUEDOS</h2></section> <!-- nome da página -->
-                <section class="lancamento"><h2>PELÚCIAS</h2></section> <!-- indica a categoria -->
+                <section class="lancamento"><h2>PELÚCIAS</h2></section> <!-- nome da categoria -->
 
-                <div class="carrossel-cards"> <!-- inicia meu carrossel de cards de produtos -->
+                <div class="carrossel-cards"> <!-- inicio do meu carrossel de cards de produtos -->
                     <div><button class="anterior"><img src="images/seta-esquerda.png" alt="seta para esquerda"></button></div>
                     <div class="carrossel">
                         <div class="produto" id="brinquedos"> 
-                            <!-- <div class="cards-produto"><img class="promos" src="images/PELÚCIAS/cinnamonroll - PRINCIPAL.jfif" alt="Pelúcia Hello Kitty"/>
+                            <!-- <div class="cards-produto">
+                                <img class="promos" src="images/PELÚCIAS/cinnamonroll - PRINCIPAL.jfif" alt="Pelúcia Hello Kitty"/>
                                 <p class="nome-produto">Sanrio Hello Kitty "Boa Noite"</p>
                                 <p class="codigo">Cod. 0756924</p>
                                 <p class="nome-produto">R$150,00</p>
@@ -111,9 +148,9 @@
                     <div><button class="proximo"><img src="images/seta-direita.png" alt="seta para direita"></button></div>
                 </div>
 
-                <section class="lancamento"><h2>COLECIONÁVEIS</h2></section>
+                <section class="lancamento"><h2>COLECIONÁVEIS</h2></section> <!-- categoria -->
 
-                <div class="carrossel-cards"> <!-- inicia meu carrossel de cards de produtos -->
+                <div class="carrossel-cards"> <!-- inicio do carrossel de produtos -->
                     <div><button class="anterior"><img src="images/seta-esquerda.png" alt="seta para esquerda"></button></div>
                     <div class="carrossel">
                         <div class="produto" id="colecionaveis"> 
@@ -179,9 +216,9 @@
                     <div><button class="proximo"><img src="images/seta-direita.png" alt="seta para direita"></button></div>
                 </div>
 
-                <section class="lancamento"><h2>LEGO</h2></section>
+                <section class="lancamento"><h2>LEGO</h2></section> <!-- categoria -->
 
-                <div class="carrossel-cards"> <!-- inicia meu carrossel de cards de produtos -->
+                <div class="carrossel-cards"> <!-- nome do carrossel de produtos -->
                     <div><button class="anterior"><img src="images/seta-esquerda.png" alt="seta para esquerda"></button></div>
                     <div class="carrossel">
                         <div class="produto" id="lego"> 
@@ -246,34 +283,60 @@
 
                     <div><button class="proximo"><img src="images/seta-direita.png" alt="seta para direita"></button></div>
                 </div>
-            </main> <!-- encerramento do meu conteúdo principal -->
+            </main>
 
-            <footer> <!-- tag contendo meu rodapé -->
-                <section class="rodape">
-                    <div><h3 id="inst">Institucional</h3>  <!-- área de informações e contato do site -->
-                        <a href="sobre.html"><p>Sobre nós</p></a>
-                        <a href="fale.html"><p>Fale conosco</p></a>
-                        <a href="trocas.html"><p>Política de trocas</p></a>
-                        <a href="privacidade.html"></s><p>Política de privacidade</p></a>
-                    </div>
+            <footer>
+				<section class="rodape">
+					<div>
+						<h3 id="inst">Institucional</h3>
+						<a href="/sobre.html"><p>Sobre nós</p></a>
+						<a href="/fale.html"><p>Fale conosco</p></a>
+						<a href="/trocas.html"><p>Política de trocas</p></a>
+						<a href="/privacidade.html"></s><p>Política de privacidade</p></a>
+					</div>
 
-                    <div><h3 id="atend">Atendimento</h3> <!-- área de informações e contato do site -->
-                        <p>Diariamente das 9h as 22h</p>
-                        <p><img id="wpp1" src="images/HOME/icone wpp 1.png" alt="Logo WhatsApp"/>(19) 99999-9999</p>
-                        <p><img id="wpp2" src="images/HOME/icone wpp 1.png" alt="Logo WhatsApp"/>(19) 99999-9999</p>
-                    </div>
+					<div>
+						<h3 id="atend">Atendimento</h3>
+						<p>Diariamente das 9h as 22h</p>
+						<p class="app-icon">
+							<img
+								id="wpp1"
+								src="/images/HOME/icone wpp 1.png"
+								alt="Logo WhatsApp"
+							/>(19) 99999-9999
+						</p>
+						<p class="app-icon">
+							<img
+								id="wpp2"
+								src="/images/HOME/icone wpp 1.png"
+								alt="Logo WhatsApp"
+							/>(19) 99999-9999
+						</p>
+					</div>
 
-                    <div>
-                        <h3 id="redes">Redes sociais</h3> <!-- área de informações e contato do site -->
-                        <p>Acompanhe todas as novidades através das nossas redes sociais</p>
-                        <img id="ig" src="images/HOME/icone instagram.png" alt="Logo Instagram"/>
-                        <img id="ttk" src="images/HOME/icone tiktok.png" alt="Logo TikTok"/>
-                    </div>
-                </section>
+					<div>
+						<h3 id="redes">Redes sociais</h3>
+						<p>Acompanhe todas as novidades através das nossas redes sociais</p>
+						<div class="img-medias">
+							<img
+							id="ig"
+							src="/images/HOME/icone instagram.png"
+							alt="Logo Instagram"
+							/>
+							<img
+								id="ttk"
+								src="/images/HOME/icone tiktok.png"
+								alt="Logo TikTok"
+							/>
+						</div>
+					</div>
+				</section>
 
-				<!--os créditos -->
-                <h6 id="direitos">Todos os direitos reservados - DESENVOLVIDO POR DESENVOLVIMENTO DE SISTEMAS: SENAI "Roberto Mange"</h6>
-			</footer> <!-- encerramento do meu rodapé -->
+				<h6 id="direitos">
+					Todos os direitos reservados - DESENVOLVIDO POR DESENVOLVIMENTO DE
+					SISTEMAS: SENAI "Roberto Mange"
+				</h6>
+			</footer>
 		</div> <!-- encerramento do fundo branco do site -->
 	</body> <!-- encerramento do meu body -->
 </html> <!-- encerramento do meu conteúdo HTML -->

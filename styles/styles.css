@@ -8,6 +8,10 @@
 @import url(/styles/header.css);
 @import url(/styles/index.css);
 @import url(/styles/cards.css);
+@import url(/styles/footer.css);
+@import url(/styles/product.css);
+@import url(/styles/user.css);
+@import url(/styles/forms.css);
 
 /* VAR */
 :root {
@@ -29,7 +33,7 @@
 }
 
 /* CONFIGURAÇÕES DO FUNDO DO SITE */
-body {
+body, html {
 	background-color: #fec9c3;
 }
 
@@ -50,12 +54,17 @@ a:visited {
 	margin: auto; 
 	margin-top: 15px; 
 	padding: 29px; 
-	border-radius: 37px; 
+	border-radius: 37px;
+	box-sizing: border-box 
 }
 
 /* RESPONSIVIDADE */
 
 @media (max-width: 768px) {
+	body{
+		background-color: #fff;
+	}
+
     .background {
 		height: auto;
 		width: 100%;
@@ -65,96 +74,11 @@ a:visited {
 	}
 }
 
-/* CONFIGURAÇÃO DO QUE ABRANGE OS CARDS */
-
-
-
-/* CONFIGURAÇÃO DOS CARDS */
-
-
+/* CONFIGURAÇÕES DO CARROSSEL */
 
 .anterior,
 .proximo {
 	margin-top: 10px;
-}
-
-
-
-/* CONFIGURAÇÃO DAS IMAGENS DO CARD */
-
-
-
-/* CONFIGURAÇÃO DA NEW-2 */
-
-
-
-/* CONFIGURAÇÃO DOS P DENTRO DOS CARDS */
-
-/* CONFIGURAÇÃO DA DIV RODAPÉ */
-
-.rodape {
-	background-color: #ffe8e6; /* DEFINE A COR DO FUNDO */
-	display: flex; /* DEFINE A CAIXA COMO FLEXÍVEL */
-	justify-content: space-around; /* DEFINE O ESPAÇAMENTO ENTRE OS ITENS */
-	align-items: center; /* DEFINE O ALINHAMENTO DOS ITENS AO CENTRO */
-	margin-top: 50px; /* DEFINE A MARGEM DO TOPO */
-	border-radius: 33px; /* DEFINE O ARREDONDAMENTO DAS BORDAS */
-	padding: 10px; /* DEFINE A MARGEM INTERNA */
-}
-
-/* CONFIGURAÇÃO DA FONTE DOS DIREITOS DO RODAPÉ */
-
-#direitos {
-	display: flex; /* DEFINE COMO CAIXA FLEXÍVEL */
-	justify-content: center; /* DEFINE O ESPAÇAMENTO DOS ITENS */
-	margin-top: 17px; /* DEFINE A MARGEM DO TOPO */
-	font-family: "Manrope"; /* DEFINE A FONTE DO TEXTO */
-}
-
-/* CONFIGURAÇÃO DOS H3 DO RODAPÉ */
-
-.rodape h3 {
-	font-size: 27px; /* DEFINE O TAMANHO DA FONTE */
-	font-family: "Manrope"; /* DEFINE A FONTE DO TEXTO */
-	margin-top: 10px; /* DEFINE A MARGEM DO TOPO */
-}
-
-/* CONFIGURAÇÃO DOS P DO RODAPÉ */
-
-.rodape p {
-	font-family: "Manrope"; /* DEFINE A FONTE DO TEXTO */
-	font-size: 15px; /* DEFINE O TAMANHO DA FONTE */
-	text-decoration: underline;
-}
-
-/* CONFIGURAÇÃO DO ÍCONE DO TIKTOK */
-
-#ttk {
-	margin-bottom: -5px; /* DEFINE A MARGEM DE BAIXO */
-}
-
-/* CONFIGURAÇÃO DO ÍCONE 1 DO WHATSAPP */
-
-#wpp1 {
-	margin-bottom: -7px; /* DEFINE A MARGEM DE BAIXO */
-}
-
-/* CONFIGURAÇÃO DO ÍCONE 2 DO WHATSAPP */
-
-#wpp2 {
-	margin-bottom: -8px; /* DEFINE A MARGEM DE BAIXO */
-}
-
-/* CONFIGURAÇÃO DAS REDES DO RODAPÉ */
-
-#redes {
-	margin-top: -20px; /* DEFINE A MARGEM DO TOPO */
-}
-
-/* CONFIGURAÇÃO DE ATENDIMENTO DO RODAPÉ */
-
-#atend {
-	margin-top: -10px; /* DEFINE A MARGEM DO TOPO */
 }
 
 .carrossel {
@@ -193,162 +117,6 @@ button {
 .promos {
 	border-radius: 33px;
 	margin-left: 5px;
-}
-
-/* CONFIGURAÇÕES DA PÁGINA DE PRODUTOS: */
-
-.fundo-produto {
-	background-color: #fff; /* DEFINE A COR DE FUNDO */
-	height: 80%; /* DEFINE A ALTURA DO MEU BACKGROUND */
-	width: 95%; /* DEFINE A LARGURA DO MEU BACKGROUND */
-	padding: 29px; /* DEFINE A MARGEM INTERIOR DO MEU BACKGROUND */
-	border-radius: 68px; /* DEFINE A CURVATURA DA BORDA DO MEU BACKGROUND */
-	display: flex;
-	align-items: stretch;
-	border: 3px solid #fec9c3;
-	box-shadow: 0 0 20px rgba(93, 93, 93, 0.2);
-}
-
-.produto-infoimg {
-	background-color: #fff; /* DEFINE A COR DE FUNDO */
-	width: 62%; /* DEFINE A LARGURA DO MEU BACKGROUND */
-	padding: 15px; /* DEFINE A MARGEM INTERIOR DO MEU BACKGROUND */
-	border-radius: 17px;
-	display: flex;
-	box-shadow: 0 0 20px rgba(93, 93, 93, 0.2);
-	margin-top: 10px;
-	border: 1px solid #fec9c3;
-}
-
-.col-1 {
-	margin-right: 10px;
-}
-
-.produto-infoimg img {
-	height: 60px;
-	width: 60px;
-	border-radius: 7px;
-}
-
-.produto-principal {
-	background-color: #fff; /* DEFINE A COR DE FUNDO */
-	height: 80%; /* DEFINE A ALTURA DO MEU BACKGROUND */
-	padding: 15px; /* DEFINE A MARGEM INTERIOR DO MEU BACKGROUND */
-	border-radius: 68px; /* DEFINE A CURVATURA DA BORDA DO MEU BACKGROUND */
-	flex-wrap: wrap;
-	align-items: center;
-	box-shadow: 0 0 20px rgba(93, 93, 93, 0.2);
-	margin-right: 10px;
-	border: 1px solid #fec9c3;
-}
-
-.produto-principal img {
-	height: 500px;
-	width: 500px;
-	border-radius: 50px;
-}
-
-.produto-nome {
-	font-size: 35px;
-}
-
-.infos {
-	font-size: 18px;
-}
-
-.valores-produto {
-	margin-top: 20px;
-}
-
-.informacoes {
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: column;
-	margin-top: 36px;
-}
-
-.informacoes p {
-	margin-left: 10px;
-}
-
-.informacoes h4 {
-	font-size: 20px;
-	margin-left: 10px;
-}
-
-.valor-anterior {
-	text-decoration: line-through;
-	margin-left: 10px;
-}
-
-.informacoes h3 {
-	font-size: 40px;
-	color: #f08f84;
-	margin-left: 10px;
-}
-
-.informacoes h2 {
-	margin-left: 10px;
-}
-
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-	-webkit-appearance: none;
-}
-
-#quantidade {
-	width: 30px;
-	height: 30px;
-	border-radius: 10px;
-	text-align: center;
-	margin-top: 50px;
-	margin-bottom: 50px;
-	border: 1px solid #f08f84;
-}
-
-.produto-quantidade {
-	display: flex;
-	align-items: center;
-	margin-top: 20px;
-	margin-bottom: -40px;
-}
-
-.produto-quantidade p {
-	margin-right: 10px;
-}
-
-.botoes {
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-}
-
-.botoes a {
-	display: flex;
-	justify-content: center;
-}
-
-.produto-botao {
-	background-color: #fec9c3;
-	margin-top: 10px;
-	border-radius: 33px;
-	text-align: center;
-	width: 300px;
-}
-
-.comprar {
-	margin-top: 10px;
-	margin-bottom: 10px;
-}
-
-.favoritar {
-	margin-top: 10px;
-	margin-bottom: 10px;
-}
-
-.adicionar-carrinho {
-	margin-top: 10px;
-	margin-bottom: 10px;
 }
 
 /* CONFIGURAÇÃO DOS COMENTÁRIOS */
@@ -595,141 +363,6 @@ input[type="number"]::-webkit-outer-spin-button {
 	padding-bottom: 17px;
 }
 
-/* CONFIGURAÇÕES DO FORMULÁRIO DE COMPRA */
-
-.grid-1 {
-	padding-bottom: 75px;
-}
-
-.container-formulario {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-.dados {
-	font-family: "Manrope";
-	color: black;
-	font-size: 27px;
-}
-
-
-
-/* CONFIGURAÇÕES DO FORMULÁRIO DE AJUDA */
-
-.botao-formulario {
-	display: flex;
-	background: var(--blue);
-	background-color: #f08f84;
-	color: var(--white);
-	border: 0;
-	border-radius: 6px;
-	padding: 16px 20px;
-	text-transform: uppercase;
-	font-size: 20px;
-	font-weight: bold;
-
-	transition: filter 0.2s;
-}
-
-.botao-formulario:hover {
-	filter: brightness(0.8);
-}
-
-.campo_formulario {
-	display: flex;
-	flex-direction: column;
-	padding-bottom: 10px;
-}
-
-.campo_formulario.row-1 {
-flex-direction: row;
-justify-content: space-between;
-column-gap: 16px;
-}
-
-.campo_formulario .col-1, .campo_formulario .col-2, .campo_formulario .col-3, .campo_formulario .col-4 {
-padding:0
-}
-.campo_formulario .col-1, .campo_formulario .col-2, .campo_formulario .col-3, .campo_formulario .col-4 {
-display: flex;
-flex-direction: column;
-width: 100%;
-}
-
-.campo_formulario label{
-	font-size: 14px;
-	padding-bottom: 5px;
-	font-family: "Manrope";
-}
-
-.campo_formulario input, select{
-	font-size: 16px;
-	padding: 4px;
-	border-radius: 10px;
-	border: 1px solid #cccbcb;
-	font-family: "Manrope";
-}
-
-/* CONFIGURAÇÕES FORMULÁRIO DE PAGAMENTO */
-
-.payment {
-    padding:10px 0px
-}
-
-.form-field {
-    display: flex;
-    flex-direction: column;
-    margin: 15px 0px;
-    width:100%
-}
-
-.form-field label {
-    padding-bottom: 5px;
-    font-size: 12px;
-}
-
-.form-field input, select{
-    padding:10px;
-    font-size: 16px;
-    border-radius: 10px;
-    border: 1px solid #e4e4e4;
-}
-
-.form-field.cep,.form-field.uf{
-    width: 20%;
-}
-
-
-.form-group {
-    column-gap: 16px;
-}
-
-.pay-method input{
-    margin-right: 3px;
-}
-
-.pay-method {
-	margin-bottom: 5px;
-}
-
-.cvv{
-    width: 20%;
-}
-
-.val{
-    width: 30%;
-}
-
-.card-info{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: flex-start;
-    column-gap: 16px;
-}
-
 /* CONFIGURAÇÕES DO CARRINHO */
 
 .itens-carrinho p {
@@ -761,33 +394,6 @@ width: 100%;
 	padding: 10px 0px;
 	background-color: #f08f84;
 	border-radius: 13px;
-}
-
-.btn-formulario {
-	margin-bottom: 15px;
-	width: 100px;
-	font-size: 20px;
-	padding: 10px 0px;
-	background-color: #f08f84;
-	border-radius: 11px;
-	height: 45px;
-	align-self: flex-end;
-}
-
-.btn-formulario-cadastro {
-	margin-bottom: 15px;
-	width: 100px;
-	font-size: 20px;
-	padding: 10px 0px;
-	background-color: #f08f84;
-	border-radius: 11px;
-	height: 45px;
-	align-self: flex-end;
-}
-
-.checkout-grid {
-	display: flex;
-	justify-content: flex-end;
 }
 
 .total {
@@ -1019,56 +625,6 @@ width: 100%;
 
 .pg-compra-confirmada h2 {
 	font-family: "Manrope";
-}
-
-.perfil {
-	display: flex;
-	align-items: center;
-	padding: 40px;
-	flex-direction: column;
-}
-
-#usuario-perfil {
-	width: 90px;
-	margin-bottom: 20px;
-}
-
-.login {
-	margin-bottom: 15px;
-	width: 100px;
-	font-size: 20px;
-	background-color: #f08f84;
-	border-radius: 11px;
-	height: 45px;
-
-}
-
-.cadastro {
-	margin-bottom: 15px;
-	width: 150px;
-	font-size: 20px;
-	background-color: #f08f84;
-	border-radius: 11px;
-	height: 45px;
-}
-
-.box {
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-	background-color: white;
-	width: 300px;
-	margin-left: 500px;
-	margin-top: 100px;
-	border-radius: 33px;
-	box-shadow: 9px 15px 10px -7px rgba(0, 0, 0, 0.1);
-	border: 1px solid whitesmoke;
-}
-
-.usuario-nome {
-	font-family: "Manrope";
-	font-size: 20px;
-	margin-bottom: -45px;
 }
 
 .payment {
