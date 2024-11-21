@@ -18,27 +18,38 @@
 
 	<body>
 		<div class="fundo"> <!-- é o fundo branco do site -->
-			<header> <!-- indica o início do meu cabeçalho -->
-				<section class="barra-pesquisa"> <!-- é o search de produtos -->
-					<div id="logo"><a href="/index.html"><img src="/images/HOME/hello kitty.png" alt="Logomarca Hello Coquetty"/></a></div> <!-- logo do site -->
-					<div id="titulo"><a href="/index.html"><h1 id="texto">Hello Coquetty!</h1></a></div> <!-- nome do site -->
-					<div id="busca"><input type="text" id="txtBusca" placeholder="Navegue pela Hello Coquetty..."/><div><img src="/images/HOME/search.png" id="btnBusca" alt="Buscar" /></div></div>
-
-					<div id="menu-itens"> <!-- é a área do usuário -->
-						<a href="/carrinho.html"><img id="carrinho" src="/images/HOME/carrinho-de-compras.png" alt="carrinho"/></a> <!-- logo do carrinho -->
-						<a href=""><img id="favoritos" src="/images/HOME/silhueta-em-forma-de-coracao.png" alt="favoritos"/></a> <!-- logo dos produtos favoritos -->
-						<a href="/usuario.html"><img id="usuario" src="/images/HOME/usuario-home.png" alt="usuário" /></a> <!-- logo do usuário -->
+			<header>
+				<section class="navbar">
+					<div class="logo-box">
+						<div class="logo"><a href="../index.html"><img src="/images/HOME/hello kitty.png" alt="Logomarca Hello Coquetty"/></a></div>
+						<div class="title"><a href="../index.html"><h1>Hello Coquetty!</h1></a></div>
 					</div>
-				</section>
+				
+					<div class="search">
+						<div class="search-box">
+							<input type="text" class="input" placeholder="Buscar..."/>
+							<img src="../images/HOME/search.png" class="search-icon" alt="Buscar" />
+						</div>
+				
+						<div class="menu-itens"> 	<!-- Menu normal para telas grandes -->
+							<a href="/pages/cart.html"><img class="nav-icon" src="../images/HOME/carrinho-de-compras.png" alt="carrinho"/></a>
+							<a href="/pages/favorite.html"><img class="nav-icon" src="../images/HOME/silhueta-em-forma-de-coracao.png" alt="favoritos"/></a>
+							<a href="/pages/user.html"><img class="nav-icon" src="../images/HOME/usuario.png" alt="usuário" /></a>
 
-				<nav class="nav-categorias"> <!-- é minha divisão por categorias -->
+							<!-- Menu hambuguer para telas menores -->
+							<div class="menu-hamburguer"><img src="../images/HOME/hamburger-icon.png" alt="Menu" class="hamburguer-icon" /></div>
+						</div>
+					</div>
+				</section>				
+
+				<nav class="bg-nav">
 					<ul>
-						<li><a href="/Brinquedos.html"><img src="/images/HOME/icone brinquedos.png" alt="Funko Hello Kitty"/><span>Brinquedos</span></a></li> <!-- categoria: brinquedo -->
-						<li><a href="/Acessorios.html"><img src="/images/HOME/icone acessórios.png" alt="Presilhas Sanrio"/><span>Acessórios</span></a></li> <!-- categoria: acessorios -->
-						<li><a href="/Sanrio.html"><img src="/images/HOME/icone sanrio.png" alt="Turma Sanrio"/><span>Sanrio</span></a></li> <!-- categoria: turma sanrio -->
+						<li><a href="/pages/toys.html" class="nav-item"><img src="../images/HOME/icone brinquedos.png" alt="Funko Hello Kitty"/><span>Brinquedos</span></a></li>
+						<li><a href="/pages/acessories.html" class="nav-item"><img src="../images/HOME/icone acessórios.png" alt="Presilhas Sanrio"/><span>Acessórios</span></a></li>
+						<li><a href="/pages/sanrio.html" class="nav-item"><img src="../images/HOME/icone sanrio.png" alt="Turma Sanrio" /><span>Sanrio</span></a></li>
 					</ul>
 				</nav>
-			</header> <!-- encerra meu cabeçalho -->
+			</header>
 
 			<main>
         		<section class="lancamento"><h2></h2></section>
@@ -84,64 +95,64 @@
 
 				<div class="comentarios">
 					<div class="meu-comentario">
-						<img src="/images/imagem-do-usuario-com-fundo-preto.png" alt="">
+						<img src="../images/imagem-do-usuario-com-fundo-preto.png" alt="">
 						<input type="text" id="caixa-comentario" min="20" placeholder="Deixe um comentário..."/>
-						<img class="send" src="/images/enviar.png" alt="">
+						<img class="send" src="../images/enviar.png" alt="">
 
 						<div class="minha-avaliacao">
-							<img src="/images/estrela-vazia.png" alt="" class="avaliacao">
-							<img src="/images/estrela-vazia.png" alt="" class="avaliacao">
-							<img src="/images/estrela-vazia.png" alt="" class="avaliacao">
-							<img src="/images/estrela-vazia.png" alt="" class="avaliacao">
-							<img src="/images/estrela-vazia.png" alt="" class="avaliacao">
+							<img src="../images/estrela-vazia.png" alt="" class="avaliacao">
+							<img src="../images/estrela-vazia.png" alt="" class="avaliacao">
+							<img src="../images/estrela-vazia.png" alt="" class="avaliacao">
+							<img src="../images/estrela-vazia.png" alt="" class="avaliacao">
+							<img src="../images/estrela-vazia.png" alt="" class="avaliacao">
 						</div>
 					</div>
 
 					<div class="coment">
 						<div class="coment-usuarios">
 							<div class="imgs">
-								<img src="/images/imagem-do-usuario-com-fundo-preto.png" alt="" >
-								<img src="/images/estrela.png" alt="" class="sua-avaliacao">
-								<img src="/images/estrela.png" alt="" class="sua-avaliacao">
-								<img src="/images/estrela.png" alt="" class="sua-avaliacao">
-								<img src="/images/estrela.png" alt="" class="sua-avaliacao">
-								<img src="/images/estrela.png" alt="" class="sua-avaliacao">
+								<img src="../images/imagem-do-usuario-com-fundo-preto.png" alt="" >
+								<img src="../images/estrela.png" alt="" class="sua-avaliacao">
+								<img src="../images/estrela.png" alt="" class="sua-avaliacao">
+								<img src="../images/estrela.png" alt="" class="sua-avaliacao">
+								<img src="../images/estrela.png" alt="" class="sua-avaliacao">
+								<img src="../images/estrela.png" alt="" class="sua-avaliacao">
 							</div>
 							<p>Essa pelúcia da Hello Kitty é simplesmente adorável! A combinação de sua fofura com a função calmante é perfeita para acalmar tanto crianças quanto adultos.</p>
 						</div>
 
 						<div class="coment-usuarios">
 							<div class="imgs">
-								<img src="/images/imagem-do-usuario-com-fundo-preto.png" alt="" >
-								<img src="/images/estrela.png" alt="" class="sua-avaliacao">
-								<img src="/images/estrela.png" alt="" class="sua-avaliacao">
-								<img src="/images/estrela.png" alt="" class="sua-avaliacao">
-								<img src="/images/estrela.png" alt="" class="sua-avaliacao">
-								<img src="/images/estrela.png" alt="" class="sua-avaliacao">
+								<img src="../images/imagem-do-usuario-com-fundo-preto.png" alt="" >
+								<img src="../images/estrela.png" alt="" class="sua-avaliacao">
+								<img src="../images/estrela.png" alt="" class="sua-avaliacao">
+								<img src="../images/estrela.png" alt="" class="sua-avaliacao">
+								<img src="../images/estrela.png" alt="" class="sua-avaliacao">
+								<img src="../images/estrela.png" alt="" class="sua-avaliacao">
 							</div>
 							<p>A capacidade de inflar a pelúcia proporciona uma sensação aconchegante ao abraçá-la, criando um ambiente reconfortante, especialmente para momentos de relaxamento.</p>
 						</div>
 
 						<div class="coment-usuarios">
 							<div class="imgs">
-								<img src="/images/imagem-do-usuario-com-fundo-preto.png" alt="" >
-								<img src="/images/estrela.png" alt="" class="sua-avaliacao">
-								<img src="/images/estrela.png" alt="" class="sua-avaliacao">
-								<img src="/images/estrela.png" alt="" class="sua-avaliacao">
-								<img src="/images/estrela.png" alt="" class="sua-avaliacao">
-								<img src="/images/estrela.png" alt="" class="sua-avaliacao">
+								<img src="../images/imagem-do-usuario-com-fundo-preto.png" alt="" >
+								<img src="../images/estrela.png" alt="" class="sua-avaliacao">
+								<img src="../images/estrela.png" alt="" class="sua-avaliacao">
+								<img src="../images/estrela.png" alt="" class="sua-avaliacao">
+								<img src="../images/estrela.png" alt="" class="sua-avaliacao">
+								<img src="../images/estrela.png" alt="" class="sua-avaliacao">
 							</div>
 							<p>A música suave que ela toca é realmente relaxante e ajuda a aliviar o estresse do dia a dia. É como ter um abraço reconfortante e uma trilha sonora calmante ao mesmo tempo!</p>
 						</div>
 
 						<div class="coment-usuarios">
 							<div class="imgs">
-								<img src="/images/imagem-do-usuario-com-fundo-preto.png" alt="" >
-								<img src="/images/estrela.png" alt="" class="sua-avaliacao">
-								<img src="/images/estrela.png" alt="" class="sua-avaliacao">
-								<img src="/images/estrela.png" alt="" class="sua-avaliacao">
-								<img src="/images/estrela.png" alt="" class="sua-avaliacao">
-								<img src="/images/estrela.png" alt="" class="sua-avaliacao">
+								<img src="../images/imagem-do-usuario-com-fundo-preto.png" alt="" >
+								<img src="../images/estrela.png" alt="" class="sua-avaliacao">
+								<img src="../images/estrela.png" alt="" class="sua-avaliacao">
+								<img src="../images/estrela.png" alt="" class="sua-avaliacao">
+								<img src="../images/estrela.png" alt="" class="sua-avaliacao">
+								<img src="../images/estrela.png" alt="" class="sua-avaliacao">
 							</div>
 							<p>A Hello Kitty é um ícone querido, e essa pelúcia não só captura sua doçura, mas também oferece uma experiência relaxante única. É um presente encantador que traz conforto e sorrisos.</p>
 						</div>
@@ -152,10 +163,10 @@
 			<footer> <!-- tag contendo meu rodapé -->
                 <section class="rodape">
                     <div><h3 id="inst">Institucional</h3>  <!-- área de informações e contato do site -->
-                        <a href="sobre.html"><p>Sobre nós</p></a>
-                        <a href="fale.html"><p>Fale conosco</p></a>
-                        <a href="trocas.html"><p>Política de trocas</p></a>
-                        <a href="privacidade.html"></s><p>Política de privacidade</p></a>
+                        <a href="/pages/sobre.html"><p>Sobre nós</p></a>
+                        <a href="/pages/fale.html"><p>Fale conosco</p></a>
+                        <a href="/pages/trocas.html"><p>Política de trocas</p></a>
+                        <a href="/pages/privacidade.html"></s><p>Política de privacidade</p></a>
                     </div>
 
                     <div><h3 id="atend">Atendimento</h3> <!-- área de informações e contato do site -->

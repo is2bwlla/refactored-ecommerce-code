@@ -4,7 +4,7 @@ export function loadProducts(productList, load) {
 
   productList.forEach((produto) => {
     const valParcela = (produto.preco / 3).toFixed(2);
-    const html = `<a href="/página de produto/PgProduto.html" id="${produto.codigoProduto}"> 
+    const html = `<a href="/pages/pageProduct.html" id="${produto.codigoProduto}"> 
     <div class="cards-produto idprod" id="${produto.codigoProduto}"> <!-- card do produto -->
       <img id="${produto.codigoProduto}" id="promos-1"  src="${produto.imagemProduto.img1}" alt="Pelúcia Hello Kitty"/>
       <p class="nome-produto">${produto.tituloProduto}</p>

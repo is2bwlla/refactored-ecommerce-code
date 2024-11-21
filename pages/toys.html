@@ -12,10 +12,10 @@
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Carattere&display=swap"/>
 		<link href="https://fonts.googleapis.com/css2?family=Manuale:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet"/>
 		<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Manuale:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet"/>
-		<link rel="stylesheet" href="./styles/styles.css" />
-        <script src="./scripts/carrossel.js"></script>
-        <script type="module" src="./scripts/products.js" defer></script>
-        <script type="module" src="./scripts/menu-hamburguer.js"></script>
+		<link rel="stylesheet" href="../styles/styles.css"/>
+		<script type="module" src="../scripts/menu-hamburguer.js"></script>
+        <script src="../scripts/carrossel.js"></script>
+        <script type="module" src="../scripts/products.js" defer></script>
     </head>
 
     <body>
@@ -23,97 +23,74 @@
 			<header>
 				<section class="navbar">
 					<div class="logo-box">
-						<div class="logo">
-							<a href="/index.html"><img src="/images/HOME/hello kitty.png" alt="Logomarca Hello Coquetty"/></a>
-						</div>
-				
-						<div class="title">
-							<a href="/index.html"><h1>Hello Coquetty!</h1></a>
-						</div>
+						<div class="logo"><a href="../index.html"><img src="/images/HOME/hello kitty.png" alt="Logomarca Hello Coquetty"/></a></div>
+						<div class="title"><a href="../index.html"><h1>Hello Coquetty!</h1></a></div>
 					</div>
 				
 					<div class="search">
 						<div class="search-box">
 							<input type="text" class="input" placeholder="Buscar..."/>
-							<img src="/images/HOME/search.png" class="search-icon" alt="Buscar" />
+							<img src="../images/HOME/search.png" class="search-icon" alt="Buscar" />
 						</div>
 				
-						<!-- Menu normal para telas grandes -->
-						<div class="menu-itens">
-							<a href="/cart.html"><img class="nav-icon" src="/images/HOME/carrinho-de-compras.png" alt="carrinho"/></a>
-							<a href="/favorite.html"><img class="nav-icon" src="/images/HOME/silhueta-em-forma-de-coracao.png" alt="favoritos"/></a>
-							<a href="/user.html"><img class="nav-icon" src="/images/HOME/usuario.png" alt="usuário" /></a>
+						<div class="menu-itens"> 	<!-- Menu normal para telas grandes -->
+							<a href="/pages/cart.html"><img class="nav-icon" src="../images/HOME/carrinho-de-compras.png" alt="carrinho"/></a>
+							<a href="/pages/favorite.html"><img class="nav-icon" src="../images/HOME/silhueta-em-forma-de-coracao.png" alt="favoritos"/></a>
+							<a href="/pages/user.html"><img class="nav-icon" src="../images/HOME/usuario.png" alt="usuário" /></a>
 
-							<div class="menu-hamburguer">
-								<img src="/images/HOME/hamburger-icon.png" alt="Menu" class="hamburguer-icon" />
-							</div>
+							<!-- Menu hambuguer para telas menores -->
+							<div class="menu-hamburguer"><img src="../images/HOME/hamburger-icon.png" alt="Menu" class="hamburguer-icon" /></div>
 						</div>
 					</div>
 				</section>				
 
 				<nav class="bg-nav">
 					<ul>
-						<li>
-							<a href="/toys.html" class="nav-item">
-								<img src="/images/HOME/icone brinquedos.png" alt="Funko Hello Kitty"/>
-								<span>Brinquedos</span>
-							</a>
-						</li>
-
-						<li>
-							<a href="/acessories.html" class="nav-item">
-								<img src="/images/HOME/icone acessórios.png" alt="Presilhas Sanrio"/>
-								<span>Acessórios</span>
-							</a>
-						</li>
-
-						<li>
-							<a href="/sanrio.html" class="nav-item">
-								<img src="/images/HOME/icone sanrio.png" alt="Turma Sanrio" />
-								<span>Sanrio</span>
-							</a>
-						</li>
+						<li><a href="/pages/toys.html" class="nav-item"><img src="../images/HOME/icone brinquedos.png" alt="Funko Hello Kitty"/><span>Brinquedos</span></a></li>
+						<li><a href="/pages/acessories.html" class="nav-item"><img src="../images/HOME/icone acessórios.png" alt="Presilhas Sanrio"/><span>Acessórios</span></a></li>
+						<li><a href="/pages/sanrio.html" class="nav-item"><img src="../images/HOME/icone sanrio.png" alt="Turma Sanrio" /><span>Sanrio</span></a></li>
 					</ul>
 				</nav>
 			</header>
 
             <main>
-                <section class="lancamento"><h2>BRINQUEDOS</h2></section>
-                <section class="lancamento"><h2>PELÚCIAS</h2></section>
+                <section class="lancamento"><h2>BRINQUEDOS</h2></section> <!-- nome da página -->
+                <section class="lancamento"><h2>PELÚCIAS</h2></section> <!-- nome da categoria -->
 
-                <div class="carrossel-cards">
-                    <div><button class="anterior"><img src="images/seta-esquerda.png" alt="seta para esquerda"></button></div>
+                <div class="carrossel-cards"> <!-- inicio do meu carrossel de cards de produtos -->
+                    <div><button class="anterior"><img src="../images/seta-esquerda.png" alt="seta para esquerda"></button></div>
                     <div class="carrossel">
                         <div class="produto" id="brinquedos"> 
-                            <!-- <div class="cards-produto"><img class="promos" src="images/PELÚCIAS/cinnamonroll - PRINCIPAL.jfif" alt="Pelúcia Hello Kitty"/>
+                            <!-- <div class="cards-produto">
+                                <img class="promos" src="../images/PELÚCIAS/cinnamonroll - PRINCIPAL.jfif" alt="Pelúcia Hello Kitty"/>
                                 <p class="nome-produto">Sanrio Hello Kitty "Boa Noite"</p>
                                 <p class="codigo">Cod. 0756924</p>
                                 <p class="nome-produto">R$150,00</p>
                                 <p class="parcela">3x de R$50,00 s/juros</p>
                             </div>
         
-                            <div class="cards-produto"><img class="promos" src="images/PELÚCIAS/cinnamonrollFRUTAS - PRINCIPAL.jfif" alt="Abajur Pochacco"/>
+                            <div class="cards-produto"><img class="promos" src="../images/PELÚCIAS/cinnamonrollFRUTAS - PRINCIPAL.jfif" alt="Abajur Pochacco"/>
                                 <p class="nome-produto">Sanrio Pochacco luminária"</p>
                                 <p class="codigo">Cod. 0756925</p>
                                 <p class="nome-produto">R$60,00</p>
                                 <p class="parcela">2x de R$30,00 s/juros</p>
                             </div>
         
-                            <div class="cards-produto"><img class="promos"src="images/PELÚCIAS/coloridoSanrio - PRINCIPAL.jfif"alt="lancheira Hello Kitty"/>
+                            <div class="cards-produto"><img class="promos"src="../images/PELÚCIAS/coloridoSanrio - PRINCIPAL.jfif"alt="lancheira Hello Kitty"/>
                                 <p class="nome-produto">Sanrio Lancheira Hello Kitty</p>
                                 <p class="codigo">Cod. 0756926</p>
                                 <p class="nome-produto">R$30,00</p>
                                 <p class="parcela">2x de R$15,00 s/juros</p>
                             </div>
 
-                            <div class="cards-produto"><img class="promos" src="images/PELÚCIAS/myM - PRINCIPAL.jfif" alt="Pelúcia Hello Kitty"/>
+                            <div class="cards-produto"><img class="promos" src="../images/PELÚCIAS/myM - PRINCIPAL.jfif" alt="Pelúcia Hello Kitty"/>
                                 <p class="nome-produto">Sanrio Hello Kitty "Boa Noite"</p>
                                 <p class="codigo">Cod. 0756924</p>
                                 <p class="nome-produto">R$150,00</p>
                                 <p class="parcela">3x de R$50,00 s/juros</p>
                             </div>
         
-                            <div class="cards-produto"><img class="promos" src="images/PELÚCIAS/myMK -PRINCIPAL.jfif" alt="Abajur Pochacco"/>
+                            <div class="cards-produto"><img class="promos" src="../images/PELÚCIAS/myMK -PRINCIPAL.jfif" alt="Abajur Pochacco"/>
                                 <p class="nome-produto">Sanrio Pochacco luminária"</p>
                                 <p class="codigo">Cod. 0756925</p>
                                 <p class="nome-produto">R$60,00</p>
@@ -121,21 +98,21 @@
                             </div>
         
                             <div class="cards-produto">
-                                <img class="promos" src="images/PELÚCIAS/pompompurin - PRINCIPAL.jfif" alt="lancheira Hello Kitty"/>
+                                <img class="promos" src="../images/PELÚCIAS/pompompurin - PRINCIPAL.jfif" alt="lancheira Hello Kitty"/>
                                 <p class="nome-produto">Sanrio Lancheira Hello Kitty</p>
                                 <p class="codigo">Cod. 0756926</p>
                                 <p class="nome-produto">R$30,00</p>
                                 <p class="parcela">2x de R$15,00 s/juros</p>
                             </div>
 
-                            <div class="cards-produto"><img class="promos" src="images/PELÚCIAS/sanrioMesmacor - PRINCIPAL.jfif" alt="lancheira Hello Kitty"/>
+                            <div class="cards-produto"><img class="promos" src="../images/PELÚCIAS/sanrioMesmacor - PRINCIPAL.jfif" alt="lancheira Hello Kitty"/>
                                 <p class="nome-produto">Sanrio Lancheira Hello Kitty</p>
                                 <p class="codigo">Cod. 0756926</p>
                                 <p class="nome-produto">R$30,00</p>
                                 <p class="parcela">2x de R$15,00 s/juros</p>
                             </div>
 
-                            <div class="cards-produto"><img class="promos" src="images/PELÚCIAS/sanrioCUTE - PRINCIPAL" alt="lancheira Hello Kitty"/>
+                            <div class="cards-produto"><img class="promos" src="../images/PELÚCIAS/sanrioCUTE - PRINCIPAL" alt="lancheira Hello Kitty"/>
                                 <p class="nome-produto">Sanrio Lancheira Hello Kitty</p>
                                 <p class="codigo">Cod. 0756926</p>
                                 <p class="nome-produto">R$30,00</p>
@@ -144,13 +121,13 @@
                         </div>
                     </div>
 
-                    <div><button class="proximo"><img src="images/seta-direita.png" alt="seta para direita"></button></div>
+                    <div><button class="proximo"><img src="../images/seta-direita.png" alt="seta para direita"></button></div>
                 </div>
 
-                <section class="lancamento"><h2>COLECIONÁVEIS</h2></section>
+                <section class="lancamento"><h2>COLECIONÁVEIS</h2></section> <!-- categoria -->
 
-                <div class="carrossel-cards">
-                    <div><button class="anterior"><img src="images/seta-esquerda.png" alt="seta para esquerda"></button></div>
+                <div class="carrossel-cards"> <!-- inicio do carrossel de produtos -->
+                    <div><button class="anterior"><img src="../images/seta-esquerda.png" alt="seta para esquerda"></button></div>
                     <div class="carrossel">
                         <div class="produto" id="colecionaveis"> 
                             <!-- <div class="cards-produto"><img class="promos" src="images/PELÚCIAS/cinnamonroll - PRINCIPAL.jfif" alt="Pelúcia Hello Kitty"/>
@@ -212,44 +189,44 @@
                         </div>
                     </div>
 
-                    <div><button class="proximo"><img src="images/seta-direita.png" alt="seta para direita"></button></div>
+                    <div><button class="proximo"><img src="../images/seta-direita.png" alt="seta para direita"></button></div>
                 </div>
 
-                <section class="lancamento"><h2>LEGO</h2></section>
+                <section class="lancamento"><h2>LEGO</h2></section> <!-- categoria -->
 
-                <div class="carrossel-cards">
-                    <div><button class="anterior"><img src="images/seta-esquerda.png" alt="seta para esquerda"></button></div>
+                <div class="carrossel-cards"> <!-- nome do carrossel de produtos -->
+                    <div><button class="anterior"><img src="../images/seta-esquerda.png" alt="seta para esquerda"></button></div>
                     <div class="carrossel">
                         <div class="produto" id="lego"> 
-                            <!-- <div class="cards-produto"><img class="promos" src="images/PELÚCIAS/cinnamonroll - PRINCIPAL.jfif" alt="Pelúcia Hello Kitty"/>
+                            <!-- <div class="cards-produto"><img class="promos" src="../images/PELÚCIAS/cinnamonroll - PRINCIPAL.jfif" alt="Pelúcia Hello Kitty"/>
                                 <p class="nome-produto">Sanrio Hello Kitty "Boa Noite"</p>
                                 <p class="codigo">Cod. 0756924</p>
                                 <p class="nome-produto">R$150,00</p>
                                 <p class="parcela">3x de R$50,00 s/juros</p>
                             </div>
         
-                            <div class="cards-produto"><img class="promos" src="images/PELÚCIAS/cinnamonrollFRUTAS - PRINCIPAL.jfif" alt="Abajur Pochacco"/>
+                            <div class="cards-produto"><img class="promos" src="../images/PELÚCIAS/cinnamonrollFRUTAS - PRINCIPAL.jfif" alt="Abajur Pochacco"/>
                                 <p class="nome-produto">Sanrio Pochacco luminária"</p>
                                 <p class="codigo">Cod. 0756925</p>
                                 <p class="nome-produto">R$60,00</p>
                                 <p class="parcela">2x de R$30,00 s/juros</p>
                             </div>
         
-                            <div class="cards-produto"><img class="promos"src="images/PELÚCIAS/coloridoSanrio - PRINCIPAL.jfif"alt="lancheira Hello Kitty"/>
+                            <div class="cards-produto"><img class="promos"src="../images/PELÚCIAS/coloridoSanrio - PRINCIPAL.jfif"alt="lancheira Hello Kitty"/>
                                 <p class="nome-produto">Sanrio Lancheira Hello Kitty</p>
                                 <p class="codigo">Cod. 0756926</p>
                                 <p class="nome-produto">R$30,00</p>
                                 <p class="parcela">2x de R$15,00 s/juros</p>
                             </div>
 
-                            <div class="cards-produto"><img class="promos" src="images/PELÚCIAS/myM - PRINCIPAL.jfif" alt="Pelúcia Hello Kitty"/>
+                            <div class="cards-produto"><img class="promos" src="../images/PELÚCIAS/myM - PRINCIPAL.jfif" alt="Pelúcia Hello Kitty"/>
                                 <p class="nome-produto">Sanrio Hello Kitty "Boa Noite"</p>
                                 <p class="codigo">Cod. 0756924</p>
                                 <p class="nome-produto">R$150,00</p>
                                 <p class="parcela">3x de R$50,00 s/juros</p>
                             </div>
         
-                            <div class="cards-produto"><img class="promos" src="images/PELÚCIAS/myMK -PRINCIPAL.jfif" alt="Abajur Pochacco"/>
+                            <div class="cards-produto"><img class="promos" src="../images/PELÚCIAS/myMK -PRINCIPAL.jfif" alt="Abajur Pochacco"/>
                                 <p class="nome-produto">Sanrio Pochacco luminária"</p>
                                 <p class="codigo">Cod. 0756925</p>
                                 <p class="nome-produto">R$60,00</p>
@@ -257,21 +234,21 @@
                             </div>
         
                             <div class="cards-produto">
-                                <img class="promos" src="images/PELÚCIAS/pompompurin - PRINCIPAL.jfif" alt="lancheira Hello Kitty"/>
+                                <img class="promos" src="../images/PELÚCIAS/pompompurin - PRINCIPAL.jfif" alt="lancheira Hello Kitty"/>
                                 <p class="nome-produto">Sanrio Lancheira Hello Kitty</p>
                                 <p class="codigo">Cod. 0756926</p>
                                 <p class="nome-produto">R$30,00</p>
                                 <p class="parcela">2x de R$15,00 s/juros</p>
                             </div>
 
-                            <div class="cards-produto"><img class="promos" src="images/PELÚCIAS/sanrioMesmacor - PRINCIPAL.jfif" alt="lancheira Hello Kitty"/>
+                            <div class="cards-produto"><img class="promos" src="../images/PELÚCIAS/sanrioMesmacor - PRINCIPAL.jfif" alt="lancheira Hello Kitty"/>
                                 <p class="nome-produto">Sanrio Lancheira Hello Kitty</p>
                                 <p class="codigo">Cod. 0756926</p>
                                 <p class="nome-produto">R$30,00</p>
                                 <p class="parcela">2x de R$15,00 s/juros</p>
                             </div>
 
-                            <div class="cards-produto"><img class="promos" src="images/PELÚCIAS/sanrioCUTE - PRINCIPAL" alt="lancheira Hello Kitty"/>
+                            <div class="cards-produto"><img class="promos" src=../"images/PELÚCIAS/sanrioCUTE - PRINCIPAL" alt="lancheira Hello Kitty"/>
                                 <p class="nome-produto">Sanrio Lancheira Hello Kitty</p>
                                 <p class="codigo">Cod. 0756926</p>
                                 <p class="nome-produto">R$30,00</p>
@@ -280,7 +257,7 @@
                         </div>
                     </div>
 
-                    <div><button class="proximo"><img src="images/seta-direita.png" alt="seta para direita"></button></div>
+                    <div><button class="proximo"><img src="../images/seta-direita.png" alt="seta para direita"></button></div>
                 </div>
             </main>
 
@@ -288,53 +265,30 @@
 				<section class="rodape">
 					<div>
 						<h3 id="inst">Institucional</h3>
-						<a href="/sobre.html"><p>Sobre nós</p></a>
-						<a href="/fale.html"><p>Fale conosco</p></a>
-						<a href="/trocas.html"><p>Política de trocas</p></a>
-						<a href="/privacidade.html"></s><p>Política de privacidade</p></a>
+						<a href="../pages/sobre.html"><p>Sobre nós</p></a>
+						<a href="../pages/fale.html"><p>Fale conosco</p></a>
+						<a href="../pages/trocas.html"><p>Política de trocas</p></a>
+						<a href="../pages/privacidade.html"></s><p>Política de privacidade</p></a>
 					</div>
 
 					<div>
 						<h3 id="atend">Atendimento</h3>
 						<p>Diariamente das 9h as 22h</p>
-						<p class="app-icon">
-							<img
-								id="wpp1"
-								src="/images/HOME/icone wpp 1.png"
-								alt="Logo WhatsApp"
-							/>(19) 99999-9999
-						</p>
-						<p class="app-icon">
-							<img
-								id="wpp2"
-								src="/images/HOME/icone wpp 1.png"
-								alt="Logo WhatsApp"
-							/>(19) 99999-9999
-						</p>
+						<p class="app-icon"><img id="wpp1" src="../images/HOME/icone wpp 1.png" alt="Logo WhatsApp"/>(19) 99999-9999</p>
+						<p class="app-icon"><img id="wpp2" src="../images/HOME/icone wpp 1.png" alt="Logo WhatsApp"/>(19) 99999-9999</p>
 					</div>
 
 					<div>
 						<h3 id="redes">Redes sociais</h3>
 						<p>Acompanhe todas as novidades através das nossas redes sociais</p>
 						<div class="img-medias">
-							<img
-							id="ig"
-							src="/images/HOME/icone instagram.png"
-							alt="Logo Instagram"
-							/>
-							<img
-								id="ttk"
-								src="/images/HOME/icone tiktok.png"
-								alt="Logo TikTok"
-							/>
+							<img id="ig" src="../images/HOME/icone instagram.png" alt="Logo Instagram"/>
+							<img id="ttk" src="../images/HOME/icone tiktok.png" alt="Logo TikTok"/>
 						</div>
 					</div>
 				</section>
 
-				<h6 id="direitos">
-					Todos os direitos reservados - DESENVOLVIDO POR DESENVOLVIMENTO DE
-					SISTEMAS: SENAI "Roberto Mange"
-				</h6>
+				<h6 id="direitos">Todos os direitos reservados - DESENVOLVIDO POR DESENVOLVIMENTO DE SISTEMAS: SENAI "Roberto Mange"</h6>
 			</footer>
 		</div> <!-- encerramento do fundo branco do site -->
 	</body> <!-- encerramento do meu body -->

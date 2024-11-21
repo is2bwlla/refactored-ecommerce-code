@@ -158,3 +158,63 @@ width: 100%;
 	color: black;
 	font-size: 27px;
 }
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 768px) {
+    /* Ajustes gerais */
+    .campo_formulario {
+        flex-direction: column; /* Coloca os campos em uma única coluna */
+        row-gap: 16px; /* Adiciona espaçamento entre os elementos */
+    }
+
+    .campo_formulario.row-1 {
+        flex-direction: column; /* Ajusta as linhas para se empilharem */
+        column-gap: 0; /* Remove o espaçamento horizontal */
+    }
+
+    .campo_formulario .col-1,
+    .campo_formulario .col-2,
+    .campo_formulario .col-3,
+    .campo_formulario .col-4 {
+        width: 100%; /* Garante que os campos ocupem toda a largura */
+    }
+
+    .form-field {
+        width: 100%; /* Deixa os campos de pagamento ocuparem toda a largura */
+    }
+
+    .form-field.cep,
+    .form-field.uf,
+    .cvv,
+    .val {
+        width: 100%; /* Ajusta campos menores para ocuparem a largura total */
+    }
+
+    .card-info {
+        flex-direction: column; /* Empilha os campos de cartão */
+        row-gap: 16px; /* Adiciona espaçamento vertical */
+    }
+
+    .payment {
+        padding: 5px 0; /* Reduz o espaçamento vertical */
+    }
+
+    .botao-formulario {
+        width: 100%; /* Botão ocupa a largura total */
+        justify-content: center; /* Centraliza o botão */
+    }
+
+    .container-formulario {
+        align-items: stretch; /* Alinha os itens para ocuparem toda a largura */
+    }
+
+    .dados {
+        font-size: 20px; /* Ajusta o tamanho do texto */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    .checkout-grid {
+        justify-content: center; /* Centraliza os botões */
+    }
+}
