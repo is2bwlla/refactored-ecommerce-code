@@ -40,14 +40,14 @@ export function loadProduct(produto,selecaoProduto){
   const valParcela = (produto.preco / 3).toFixed(2);
  const HTML = `
  <div class="col-1">
-						<div class="produto-infoimg"><img src=".${produto.imagemProduto.img1}" alt=""></div> <!-- imagem pequena referencial -->
-						<div class="produto-infoimg"><img src=".${produto.imagemProduto.img2}" alt=""></div> <!-- imagem pequena referencial -->
-						<div class="produto-infoimg"><img src=".${produto.imagemProduto.img3}" alt=""></div> <!-- imagem pequena referencial -->
-						<div class="produto-infoimg"><img src=".${produto.imagemProduto.img4}" alt=""></div> <!-- imagem pequena referencial -->
-						<div class="produto-infoimg"><img src=".${produto.imagemProduto.img1}" alt=""></div> <!-- imagem pequena referencial -->
+						<div class="produto-infoimg"><img src="${produto.imagemProduto.img1}" alt=""></div> <!-- imagem pequena referencial -->
+						<div class="produto-infoimg"><img src="${produto.imagemProduto.img2}" alt=""></div> <!-- imagem pequena referencial -->
+						<div class="produto-infoimg"><img src="${produto.imagemProduto.img3}" alt=""></div> <!-- imagem pequena referencial -->
+						<div class="produto-infoimg"><img src="${produto.imagemProduto.img4}" alt=""></div> <!-- imagem pequena referencial -->
+						<div class="produto-infoimg"><img src="${produto.imagemProduto.img1}" alt=""></div> <!-- imagem pequena referencial -->
 					</div>
 
-					<div class="produto-principal"><img src=".${produto.imagemProduto.img1}" alt=""></div> <!-- caixa grande que vai exibir as imagens -->
+					<div class="produto-principal"><img src="${produto.imagemProduto.img1}" alt=""></div> <!-- caixa grande que vai exibir as imagens -->
 
 					<div class="informacoes">
 						<h2 class="produto-nome">${produto.tituloProduto}</h2>  <!-- nome principal de todos os produtos -->
@@ -66,7 +66,7 @@ export function loadProduct(produto,selecaoProduto){
 					
 						<div class="botoes">
 							<div class="produto-botao">  <!-- comprar agora -->
-								<a href=""><button class="comprar">Comprar Agora</button></a>
+								<button class="comprar">Comprar Agora</button>
 							</div>
 
 							<div class="produto-botao">  <!-- adicionar ao carrinho -->

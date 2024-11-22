@@ -1,0 +1,165 @@
+.fundo-carrinho {
+	margin-top: 30px;
+	background-color: #fff; 
+	height: 80%; 
+	width: 95%; 
+	padding: 29px; 
+	border-radius: 68px; 
+	display: flex;
+	border: 3px solid #fec9c3;
+	box-shadow: 0 0 20px rgba(93, 93, 93, 0.2);
+	flex-direction: column;
+}
+
+#meu-carrinho {
+	margin-top: 25px;
+	display: flex;
+	justify-content: center;
+
+}
+
+.titulo-carrinho {
+	align-self: center;
+}
+
+.itens-adiconados {
+	width: 100%;
+  	border-collapse: collapse;
+}
+
+.itens-carrinho p {
+	font-size: 0.875em;
+	padding: 10px 0px;
+}
+
+.meucarrinho h2 {
+	font-family: "Manrope";
+}
+
+.meucarrinho p {
+	font-family: "Manrope";
+}
+
+.total_container {
+	align-items: stretch;
+	border: 1px solid #f08f84;
+	padding: 16px;
+	border-radius: 5px;
+	margin-bottom: 15px;
+	font-family: "Manrope";
+}
+
+.botao-pagamento {
+	margin-bottom: 15px;
+	width: 100%;
+	font-size: 20px;
+	padding: 10px 0px;
+	background-color: #f08f84;
+	border-radius: 13px;
+}
+
+.total {
+	padding-bottom: 10px;
+
+}
+
+.total:nth-child(2) h3{
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.total:nth-child(3){
+	border-top: 1px solid;
+	padding-top: 5px;
+}
+
+.product.text-container.page-title-small {
+	margin-top: 24px;
+}
+
+.product.text-container {
+	margin: 10px 0px;
+}
+
+.product.text-container h4 {
+	font-weight: 400;
+	font-size: 0.875em;
+	padding-bottom: 5px;
+}
+
+.product.main-text {
+	font-size:1.2em
+}
+
+.main-text {
+	border-bottom: 1px solid black;
+}
+
+.informacao-frete {
+	border: 1px solid #f08f84;
+	padding: 8px 16px;
+	border-radius: 5px;
+	margin-bottom: 30px;
+	font-family: "Manrope";
+}
+
+.informacao-frete .container-flex{
+	border-radius: 5px;
+	margin: 8px 0px 5px;
+	column-gap: 5px;
+}
+
+.informacao-frete form label{
+	font-size: 0.875em;
+}
+
+.informacao-frete form input[type="text"]{
+	border:1px solid #f08f84;
+	border-radius: 5px;
+	padding:4px 8px;
+}
+
+.button {
+	padding:4px 8px;
+	color: white;
+	background-color: #f08f84;
+	border: none;
+	border-radius: 5px;
+}
+
+.informacao-valor {
+	background-color: #E7ECFF;
+	border: 1px solid #f08f84;
+	padding: 16px 16px;
+	border-radius: 5px;
+	justify-content: flex-start;
+	column-gap: 20px;
+	margin-bottom: 16px;
+	font-family: "Manrope";
+}
+
+.preco-frete h3{
+	font-size: 1em;
+	font-weight: 700;
+	line-height: 18px;
+}
+
+.preco-frete p{
+	font-size: 0.875em;
+	font-weight: 400;
+	line-height: 18px;  
+}
+
+.informacao-valor:nth-child(4){
+	background-color: #ffe8e6;
+}
+
+.informacao-valor:nth-child(5){
+	background-color: #ffe8e6;
+}
+
+.meucarrinho {
+	display: flex;
+	justify-content: space-between;
+	padding: 40px;
+}

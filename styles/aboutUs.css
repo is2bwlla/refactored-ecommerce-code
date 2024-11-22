@@ -1,0 +1,32 @@
+.caixa-sobre-nos {
+	display: flex;
+    flex-direction: column;
+    text-align: justify;
+    width: 100%;
+}
+
+.sobre-nos {
+	font-size: 20px;
+    font-family: var(--poppins);
+    text-align: justify;
+	padding-bottom: 17px;
+}
+
+.pg-sobre-nos {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    width: 100%;
+}
+
+.pg-sobre-nos h2 {
+	font-size: 40px;
+	font-family: var(--title);
+	padding-bottom: 17px;
+}
+
+@media (max-width: 768px) {
+	.sobre-nos {
+        font-size: 17px;
+    }
+}

@@ -1,0 +1,42 @@
+.anterior,
+.proximo {
+	margin-top: 10px;
+}
+
+.carrossel {
+	display: flex;
+	overflow: hidden;
+	scroll-snap-type: mandatory;
+}
+
+.carrossel2 {
+	display: flex;
+	overflow: hidden;
+	scroll-snap-type: mandatory;
+}
+
+.carrossel-cards {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.anterior img {
+	width: 40px;
+	height: 40px;
+}
+
+.proximo img {
+	width: 40px;
+	height: 40px;
+}
+
+button {
+	background-color: transparent;
+	border: none;
+}
+
+.promos {
+	border-radius: 33px;
+	margin-left: 5px;
+}

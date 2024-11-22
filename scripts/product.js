@@ -28,5 +28,5 @@ botaoComprar.forEach((btn) => btn.addEventListener('click',()=>{
     alert("Produto adicionado com sucesso!")
     localStorage.setItem('listaCompras',JSON.stringify(listaCompras))
     console.log(listaCompras)
-    window.location = "../carrinho.html"
+    window.location = "../cart.html"
 }))
